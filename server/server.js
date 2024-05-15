@@ -12,7 +12,11 @@ app.use(express.json());
 
 //Routes
 app.use('/', router);
+
 DBConnection();
-app.listen(8000, ()=>{
-    console.log("server is listyening port 8000!");
+
+const Port = process.env.PORT || 8000
+
+app.listen(Port, ()=>{
+    console.log("server is listening port 8000!");
 });

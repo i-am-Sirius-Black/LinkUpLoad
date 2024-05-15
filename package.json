@@ -2,7 +2,8 @@
   "homepage": "http://i-am-Sirius-Black/github.io/LinkUpLoad",
   "scripts": {
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy":"gh-pages -d build",
+    "build": "react-scripts build"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
